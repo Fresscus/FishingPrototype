@@ -1,0 +1,380 @@
+
+
+@font-face {
+font-family: "amatic";
+src: url("../Main/Font/AmaticSC-Bold.ttf");
+}
+
+@font-face {
+font-family: "roboto";
+src: url("../Main/Font/Roboto-Light.ttf");
+}
+
+html { scroll-behavior: smooth; } 
+
+body{
+	font-family: roboto;
+	font-size: 20px;
+	color: rgb(33,33,33);
+	background-color: #fff;
+	letter-spacing: 1px;
+}
+
+.loader{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index:1000;
+}
+
+.loader .inner{
+	width: 100%;
+	height: 100%;
+	background: url(../Main/loader.gif) center center no-repeat;
+}
+
+
+.overlay{
+	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	background-color: rgba(0,0,0,.7);
+  	top: 0;
+  	left: 0;
+  	z-index: 5;
+}
+
+#press .downButton{
+    background: url("../Icons/down.png") no-repeat;
+    width:30px;
+    height:30px;
+    top: 95%;
+    left: 50%;
+    z-index: 5;
+ 	position:absolute;
+ 	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: -15px;
+}
+
+#press .downButton:hover{
+    background: url("../Icons/down_.png") no-repeat;
+    width:30px;
+    height:30px;
+    top: 95%;
+    left: 50%;
+    z-index: 5;
+ 	position:absolute;
+ 	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: -15px;
+}
+
+.slides-navigation{
+	z-index: 6;
+}
+
+.video{
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.MainTitle{
+    width: 400px%;
+    top: 60%;
+    z-index: 5;
+     margin-left: 50px;
+    text-align: left;
+    margin-top: -10px;
+    font-family: roboto;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 10px;
+    position:absolute;
+}
+
+.SubTitle{
+    width:500px;
+    top: 70%;
+    z-index: 5;
+     margin-left: 50px;
+    text-align: left;
+    margin-top: -20px;
+    font-family: roboto;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 1000;
+    letter-spacing: 8px;
+    position:absolute;
+}
+
+.SubTitle2{
+  width: 400px;
+    top: 90%;
+    margin-left: 50px;
+    z-index: 5;
+    text-align: left;
+    margin-top: -20px;
+    font-family: roboto;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 8px;
+    position:absolute;
+}
+
+
+.fresscus{
+    width:210px;
+	height:70px;
+    margin-left: -105px;
+ 	position:absolute;
+ 	top: 88%;
+    left: 50%;
+    z-index: 5;
+    opacity: 0.4;
+}
+
+.ctrlz{
+    width:70px;
+	height:70px;
+    margin-left: -35px;
+ 	position:absolute;
+ 	top: 82%;
+    left: 50%;
+    z-index: 5;
+    opacity: 0.4;
+}
+
+.heading{
+	padding-top: 100px;
+	font-family: roboto;
+	font-size: 30;
+	font-weight: bold;
+}
+
+.heading2{
+	padding-top: 50px;
+	font-family: roboto;
+	font-size: 30;
+	font-weight: bold;
+}
+
+.paragraph{
+	padding-top: 10px;
+}
+.paragraph2{
+	padding-top: 10px;
+	padding-bottom: 100px;
+}
+
+
+.banner{
+	background-image: url('../Main/Images/banner.jpg');
+	padding: 50px 0px 60px 0px;
+}
+
+
+.projectButton{
+	color: #FFF;
+	padding: 20px 40px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 2px solid #FFF;
+	border-radius: 2px;
+	font-size: 23px;
+	text-align: center;
+	font-family: roboto
+	font-weight: bolder;
+	align-self: center;
+}
+
+.projectButton:hover{
+	text-decoration:none;
+	color: rgb(33,33,33);
+	background-color: #FFF;
+}
+
+.projectButton2{
+	color: #FFF;
+	padding: 20px 74px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 2px solid #FFF;
+	border-radius: 2px;
+	font-size: 23px;
+	text-align: center;
+
+	font-family: roboto
+	font-weight: bolder;
+}
+
+.projectButton2:hover{
+	text-decoration:none;
+	color: rgb(33,33,33);
+	background-color: #FFF;
+}
+
+.hyperlink{
+    color: rgb(183,122,115);
+    font-family: roboto
+    font-weight: bolder;
+}
+
+.hyperlink:hover{
+    text-decoration:none;
+    color: rgb(238,99,25);
+}
+
+.skill {
+	text-align: center;
+	width: 100%;
+	padding: 70px 0px 50px 0px;
+}
+
+.owl-nav{
+	color: #fff;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+.owl-prev{
+    float:left;
+ }
+.owl-next{
+    float:right;
+}
+
+.copyrightSection{
+	background-color: rgb(33,33,33);
+	color: #FFF;
+	padding: 30px 5px;
+}
+
+.copyrightSection p{
+	margin: 0;
+}
+
+@media only screen and (max-width: 1000px){
+	.MainTitle{
+    width: 100%;
+    top: 60%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -10px;
+    font-family: roboto;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 10px;
+    position:absolute;
+    margin-left: -0%;
+}
+
+.SubTitle{
+    width: 100%;
+    top: 75%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -20px;
+    font-family: roboto;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 1000;
+    letter-spacing: 6px;
+    position:absolute;
+    margin-left: -0%;
+}
+
+.SubTitle2{
+  width: 100%;
+    top: 90%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -20px;
+    font-family: roboto;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 6px;
+    position:absolute;
+    margin-left: -0%;
+}
+}
+
+@media only screen and (max-height: 1000px){
+
+.MainTitle{
+    width: 100%;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -10px;
+    font-family: roboto;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 10px;
+    position:absolute;
+    margin-left: -0%;
+}
+
+.SubTitle{
+    width: 100%;
+    top: 65%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -20px;
+    font-family: roboto;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 1000;
+    letter-spacing: 6px;
+    position:absolute;
+    margin-left: -0%;
+}
+
+.SubTitle2{
+  width: 100%;
+    top: 80%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -20px;
+    font-family: roboto;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 6px;
+    position:absolute;
+    margin-left: -0%;
+}
+	#press .downButton{
+    background: url("../Icons/down.png") no-repeat;
+    width:30px;
+    height:30px;
+    top: 90%;
+    left: 50%;
+    z-index: 5;
+ 	position:absolute;
+ 	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: -15px;
+}
+
+#press .downButton:hover{
+    background: url("../Icons/down_.png") no-repeat;
+    width:30px;
+    height:30px;
+    top: 90%;
+    left: 50%;
+    z-index: 5;
+ 	position:absolute;
+ 	background-size: cover;
+	background-repeat: no-repeat;
+	margin-left: -15px;
+}
+}
